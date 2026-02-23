@@ -1,0 +1,13 @@
+Agentic AI systems usually have: 
+
+Planner
+
+Tool selector
+
+Executer
+
+Reflector / Critic
+
+Memory Summariser
+
+Different parts need different temperatures
