@@ -3,10 +3,10 @@ import os
 from pathlib import Path
 from dotenv import load_dotenv
 
-# Load .env from the project root (one level above this file's directory)
-PROJECT_ROOT = Path(__file__).resolve().parents[1]
-env_path = PROJECT_ROOT / ".env"
-load_dotenv(env_path)
+# Load .env from the same directory as this file (agentic_ai_day1)
+CURRENT_DIR = Path(__file__).resolve().parent
+env_path = CURRENT_DIR / ".env"
+load_dotenv(dotenv_path=str(env_path))
 
 api_key = os.getenv("GROQ_API_KEY")
 if not api_key:
